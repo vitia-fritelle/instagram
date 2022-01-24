@@ -23,7 +23,7 @@ Sinta-se à vontade para colocar as fotos de exemplo que quiser no seu Instagram
 - Stories
     - [ ]  Na caixa dos stories, deve haver itens o suficiente para ultrapassar a largura, mas os itens a mais não devem ser exibidos, conforme layout
     - [ ]  Deve haver, no modo desktop, uma setinha no canto direito dos stories (conforme mostrado no layout do [Figma](https://www.figma.com/))
-    - [ ]  A setinha não precisa funcionar ao clicar 
+    - [ ]  A setinha não precisa funcionar ao clicar (será?)
     - [ ]  Não pode haver um scroll horizontal visível
 
 # Bônus
@@ -40,7 +40,7 @@ Bônus não são obrigatórios, são sugestões. Fazer as seguintes funcionalida
     
 - Sidebar fixa
     
-    Se você acessar a página do [Instagram](https://www.instagram.com/) do seu computador e descer na página, perceberá que a barra lateral continua visível, fixa na página.
+    Se você acessar a página do [Instagram](https://www.instagram.com/) do seu computador e descer na página, perceberá que a barra lateral continua visível e fixa na página.
     
     A ideia deste bônus é implementar este comportamento, isto é, ao descer na página, a coluna permanece no mesmo lugar sempre.
     

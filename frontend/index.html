@@ -16,20 +16,34 @@
 <body>
     <header>
         <div class="icons-group">
-            <ion-icon name="logo-instagram"></ion-icon>
+            <a href="#">
+                <ion-icon class="icon" name="logo-instagram"></ion-icon>
+            </a>
             <div class="divisoria-vertical desktop1 desktop2"></div>
             <img class="desktop1 desktop2" src="./assets/imgs/logo.svg" alt="instagram">
         </div>
-        <div class="search-bar desktop1 desktop2">Pesquisar</div>
+        <input type="text" class="desktop1 desktop2" id="search-bar" name="search-bar" placeholder="Pesquisar">
         <img class="mobile" src="./assets/imgs/logo.svg" alt="instagram">
         <div class="icons-group">
-            <ion-icon class="desktop2 desktop1 mobile" name="navigate-outline"></ion-icon>
-            <ion-icon class="desktop2 desktop1" name="compass-outline"></ion-icon>
-            <ion-icon class="desktop2 desktop1" name="heart-outline"></ion-icon>
-            <ion-icon class="desktop2 desktop1" name="person-outline"></ion-icon>
+            <a href="">
+                <ion-icon class="icon desktop2 desktop1 mobile" name="navigate-outline"></ion-icon>
+            </a>
+            <a href="">
+                <ion-icon class="icon desktop2 desktop1" name="compass-outline"></ion-icon>
+            </a>
+            <a href="">
+                <ion-icon class="icon desktop2 desktop1" name="heart-outline"></ion-icon>
+            </a>
+            <a href="">
+                <ion-icon class="icon desktop2 desktop1" name="person-outline"></ion-icon>
+            </a>
         </div>
     </header>
     <div id=stories-section>
+        <input type="radio" id="arrow-left" name="arrow" value="arrow-left" checked>
+        <label id="first-button" for="arrow-left">
+            <ion-icon class="arrow-left desktop1 desktop2" name="chevron-back-circle"></ion-icon>
+        </label>
         <a href="#" class="stories-card">
             <div class="stories-img">
                 <img src="./assets/imgs/driven.jpg" alt="stories de alguém">
@@ -72,44 +86,241 @@
             </div>
             <div class="stories-name"> driven</div>
         </a>
-        <ion-icon class="arrow-right desktop1" name="chevron-forward-circle"></ion-icon>
+        <a href="#" class="stories-card">
+            <div class="stories-img">
+                <img src="./assets/imgs/driven.jpg" alt="stories de alguém">
+            </div>
+            <div class="stories-name"> driven</div>
+        </a>
+        <a href="#" class="stories-card">
+            <div class="stories-img">
+                <img src="./assets/imgs/driven.jpg" alt="stories de alguém">
+            </div>
+            <div class="stories-name"> driven</div>
+        </a>
+        <a href="#" class="stories-card">
+            <div class="stories-img">
+                <img src="./assets/imgs/driven.jpg" alt="stories de alguém">
+            </div>
+            <div class="stories-name"> driven</div>
+        </a>
+        <input type="radio" id="arrow-right" name="arrow" value="arrow-right">
+        <label id="second-button" for="arrow-right">
+            <ion-icon class="arrow-right desktop1 desktop2" name="chevron-forward-circle"></ion-icon>
+        </label>
     </div>
     <main>
         <div class="post">
             <div class="post-header">
                 <div class="post-sender">
-                    <img src="./assets/imgs/driven.jpg" alt="algum instagrammer">
-                    <h4> driven </h4>
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="algum instagrammer"></a>
+                    <a href="#"><h4> driven </h4></a>
                 </div>
-                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                <a href="#">
+                    <ion-icon class="icon" name="ellipsis-horizontal-outline"></ion-icon>
+                </a>
             </div>
-            <div class="post-img">
-                <img src="./assets/imgs/pharrel.png" alt="alguma imagem">
+            <div class="post-video">
+                <video preload="metadata" autoplay muted loop controls>
+                    <source src="assets/videos/chunky.mp4#t=187" type="video/mp4">
+                    <source src="assets/videos/chunky.ogg#t=187" type="video/ogg">
+                </video>
             </div>
             <div class="post-action">
                 <div class="post-utils">
                     <div class="icons-group">
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                        <ion-icon name="navigate-outline"></ion-icon>
+                        <a href="#">
+                            <input class="isfilled" type = "checkbox" id = "heart" name = "post1" value = "like">
+                            <label for = "heart">
+                                <ion-icon class="icon heart-outline" name="heart-outline"></ion-icon>
+                            </label>
+                            <label for = "heart">
+                                <ion-icon class="icon heart" name="heart"></ion-icon>
+                            </label>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="chatbubble-outline"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="navigate-outline"></ion-icon>
+                        </a>
                     </div>
-                    <ion-icon name="bookmark-outline"></ion-icon>
+                    <a href="#">
+                        <input class="isfilled" type = "checkbox" id = "bookmark" name = "post1" value = "bookmark">
+                        <label for = "bookmark">
+                            <ion-icon class="icon bookmark-outline" name="bookmark-outline"></ion-icon>
+                        </label>
+                        <label for = "bookmark">
+                            <ion-icon class="icon bookmark" name="bookmark"></ion-icon>
+                        </label>
+                        
+                    </a>
                 </div>
                 <div class="post-stats">
-                    <img src="./assets/imgs/driven.jpg" alt="insta de alguém">
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="insta de alguém"></a>
                     <span>
-                        Curtido por <b>respondeai</b> e <b>outras 101.523 pessoas</b>
+                        Curtido por <a href="#">respondeai</a> e <a href="#">outras 101.523 pessoas</a>
                     </span>
                 </div>
+                <div class="post-all-comments">
+                    <span>
+                        <a href="#">driven</a>🤣🤣✨🤣✨🙌🏻🙌🏻😄😄✨🥰🥰🥰✨🤙🏻🤙🏻🤗🤗🤪
+                    </span>
+                    <ion-icon class="mini-icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="horizontal"></div>
+            <div class="post-comment">
+                <div>
+                    <a href="#"><ion-icon class="icon" name="happy-outline"></ion-icon></a>
+                    <input type="text" name="comments" class="comments" placeholder="Adiciona um comentário...">
+                </div>
+                <a href="#">Publicar</a>
             </div>
         </div>
         <div class="post">
             <div class="post-header">
                 <div class="post-sender">
-                    <img src="./assets/imgs/driven.jpg" alt="algum instagrammer">
-                    <h4> driven </h4>
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="algum instagrammer"></a>
+                    <a href="#"><h4> driven </h4></a>
                 </div>
-                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                <a href="#">
+                    <ion-icon class="icon" name="ellipsis-horizontal-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="post-img">
+                <div class="ayoub">
+                    <img src="./assets/imgs/ayoub.jpg" alt="alguma imagem">
+                </div>
+            </div>
+            <div class="post-action">
+                <div class="post-utils">
+                    <div class="icons-group">
+                        <a href="#">
+                            <input class="isfilled" type = "checkbox" id = "heart2" name = "post2" value = "like">
+                            <label for = "heart2">
+                                <ion-icon class="icon heart-outline" name="heart-outline"></ion-icon>
+                            </label>
+                            <label for = "heart2">
+                                <ion-icon class="icon heart" name="heart"></ion-icon>
+                            </label>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="chatbubble-outline"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="navigate-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <input class="isfilled" type = "checkbox" id = "bookmark2" name = "post2" value = "bookmark">
+                        <label for = "bookmark2">
+                            <ion-icon class="icon bookmark-outline" name="bookmark-outline"></ion-icon>
+                        </label>
+                        <label for = "bookmark2">
+                            <ion-icon class="icon bookmark" name="bookmark"></ion-icon>
+                        </label>
+                    </a>
+                </div>
+                <div class="post-stats">
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="insta de alguém"></a>
+                    <span>
+                        Curtido por <a href="#">respondeai</a> e <a href="#">outras 101.523 pessoas</a>
+                    </span>
+                </div>
+                <div class="post-all-comments">
+                    <span>
+                        <a href="#">driven</a>Será que dá para curtir?
+                    </span>
+                    <ion-icon class="mini-icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="horizontal"></div>
+            <div class="post-comment">
+                <div>
+                    <a href="#"><ion-icon class="icon" name="happy-outline"></ion-icon></a>
+                    <input type="text" name="comments" class="comments" placeholder="Adiciona um comentário...">
+                </div>
+                <a href="#">Publicar</a>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <div class="post-sender">
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="algum instagrammer"></a>
+                    <a href="#"><h4> driven </h4></a>
+                </div>
+                <a href="#">
+                    <ion-icon class="icon" name="ellipsis-horizontal-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="post-video">
+                <video preload="metadata" controls>
+                    <source src="assets/videos/irresistible.mp4#t=154" type="video/mp4">
+                    <source src="assets/videos/irresistible.ogg#t=154" type="video/ogg">
+                </video>
+            </div>
+            <div class="post-action">
+                <div class="post-utils">
+                    <div class="icons-group">
+                        <a href="#">
+                            <input class="isfilled" type = "checkbox" id = "heart3" name = "post3" value = "like">
+                            <label for = "heart3">
+                                <ion-icon class="icon heart-outline" name="heart-outline"></ion-icon>
+                            </label>
+                            <label for = "heart3">
+                                <ion-icon class="icon heart" name="heart"></ion-icon>
+                            </label>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="chatbubble-outline"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="navigate-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <input class="isfilled" type = "checkbox" id = "bookmark3" name = "post3" value = "bookmark">
+                        <label for = "bookmark3">
+                            <ion-icon class="icon bookmark-outline" name="bookmark-outline"></ion-icon>
+                        </label>
+                        <label for = "bookmark3">
+                            <ion-icon class="icon bookmark" name="bookmark"></ion-icon>
+                        </label>
+                        
+                    </a>
+                </div>
+                <div class="post-stats">
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="insta de alguém"></a>
+                    <span>
+                        Curtido por <a href="#">respondeai</a> e <a href="#">outras 101.523 pessoas</a>
+                    </span>
+                </div>
+                <div class="post-all-comments">
+                    <span>
+                        <a href="#">driven</a>Mesmo sem JS é possível mover os stories!!!✨✨✨
+                    </span>
+                    <ion-icon class="mini-icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="horizontal"></div>
+            <div class="post-comment">
+                <div>
+                    <a href="#"><ion-icon class="icon" name="happy-outline"></ion-icon></a>
+                    <input type="text" name="comments" class="comments" placeholder="Adiciona um comentário...">
+                </div>
+                <a href="#">Publicar</a>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <div class="post-sender">
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="algum instagrammer"></a>
+                    <a href="#"><h4> driven </h4></a>
+                </div>
+                <a href="#">
+                    <ion-icon class="icon" name="ellipsis-horizontal-outline"></ion-icon>
+                </a>
             </div>
             <div class="post-img">
                 <img src="./assets/imgs/pharrel.png" alt="alguma imagem">
@@ -117,18 +328,115 @@
             <div class="post-action">
                 <div class="post-utils">
                     <div class="icons-group">
-                        <ion-icon name="heart-outline"></ion-icon>
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                        <ion-icon name="navigate-outline"></ion-icon>
+                        <a href="#">
+                            <input class="isfilled" type = "checkbox" id = "heart4" name = "post4" value = "like">
+                            <label for = "heart4">
+                                <ion-icon class="icon heart-outline" name="heart-outline"></ion-icon>
+                            </label>
+                            <label for = "heart4">
+                                <ion-icon class="icon heart" name="heart"></ion-icon>
+                            </label>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="chatbubble-outline"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="navigate-outline"></ion-icon>
+                        </a>
                     </div>
-                    <ion-icon name="bookmark-outline"></ion-icon>
+                    <a href="#">
+                        <input class="isfilled" type = "checkbox" id = "bookmark4" name = "post4" value = "bookmark">
+                        <label for = "bookmark4">
+                            <ion-icon class="icon bookmark-outline" name="bookmark-outline"></ion-icon>
+                        </label>
+                        <label for = "bookmark4">
+                            <ion-icon class="icon bookmark" name="bookmark"></ion-icon>
+                        </label>
+                        
+                    </a>
                 </div>
                 <div class="post-stats">
-                    <img src="./assets/imgs/driven.jpg" alt="insta de alguém">
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="insta de alguém"></a>
                     <span>
-                        Curtido por <b>respondeai</b> e <b>outras 101.523 pessoas</b>
+                        Curtido por <a href="#">respondeai</a> e <a href="#">outras 101.523 pessoas</a>
                     </span>
                 </div>
+            </div>
+            <div class="horizontal"></div>
+            <div class="post-comment">
+                <div>
+                    <a href="#"><ion-icon class="icon" name="happy-outline"></ion-icon></a>
+                    <input type="text" name="comments" class="comments" placeholder="Adiciona um comentário...">
+                </div>
+                <a href="#">Publicar</a>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <div class="post-sender">
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="algum instagrammer"></a>
+                    <a href="#"><h4> driven </h4></a>
+                </div>
+                <a href="#">
+                    <ion-icon class="icon" name="ellipsis-horizontal-outline"></ion-icon>
+                </a>
+            </div>
+            <div class="post-video">
+                <video preload="metadata" controls>
+                    <source src="./assets/videos/blurred_lines.mp4#t=83" type="video/mp4">
+                    <source src="./assets/videos/blurred_lines.ogg#t=83" type="video/mp4">
+                </video>
+            </div>
+            <div class="post-action">
+                <div class="post-utils">
+                    <div class="icons-group">
+                        <a href="#">
+                            <input class="isfilled" type = "checkbox" id = "heart5" name = "post5" value = "like">
+                            <label for = "heart5">
+                                <ion-icon class="icon heart-outline" name="heart-outline"></ion-icon>
+                            </label>
+                            <label for = "heart5">
+                                <ion-icon class="icon heart" name="heart"></ion-icon>
+                            </label>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="chatbubble-outline"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon class="icon" name="navigate-outline"></ion-icon>
+                        </a>
+                    </div>
+                    <a href="#">
+                        <input class="isfilled" type = "checkbox" id = "bookmark5" name = "post5" value = "bookmark">
+                        <label for = "bookmark5">
+                            <ion-icon class="icon bookmark-outline" name="bookmark-outline"></ion-icon>
+                        </label>
+                        <label for = "bookmark5">
+                            <ion-icon class="icon bookmark" name="bookmark"></ion-icon>
+                        </label>
+                        
+                    </a>
+                </div>
+                <div class="post-stats">
+                    <a href="#"><img src="./assets/imgs/driven.jpg" alt="insta de alguém"></a>
+                    <span>
+                        Curtido por <a href="#">respondeai</a> e <a href="#">outras 101.523 pessoas</a>
+                    </span>
+                </div>
+                <div class="post-all-comments">
+                    <span>
+                        <a href="#">driven</a>Esse daqui você vai ter que salvar!
+                    </span>
+                    <ion-icon class="mini-icon" name="heart-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="horizontal"></div>
+            <div class="post-comment">
+                <div>
+                    <a href="#"><ion-icon class="icon" name="happy-outline"></ion-icon></a>
+                    <input type="text" name="comments" class="comments" placeholder="Adiciona um comentário...">
+                </div>
+                <a href="#">Publicar</a>
             </div>
         </div>
     </main>
@@ -194,7 +502,7 @@
             </div>
             <a href="#">Seguir</a>
         </div>
-        <div>
+        <div class="sidebar-terms">
             <a href="#">Sobre</a>
             <a href="#">Ajuda</a>
             <a href="#">Imprensa</a>
@@ -207,14 +515,16 @@
             <a href="#">Hashtags</a>
             <a href="#">Idioma</a>
         </div>
-        <div>2021 INSTAGRAM DO FACEBOOK</div>
+        <div class="sidebar-copyright">
+            © 2021 INSTAGRAM DO FACEBOOK
+        </div>
     </aside>
     <nav class="mobile">
-        <ion-icon name="home"></ion-icon>
-        <ion-icon name="search-outline"></ion-icon>
-        <ion-icon name="add-circle-outline"></ion-icon>
-        <ion-icon name="heart-outline"></ion-icon>
-        <ion-icon name="person-outline"></ion-icon>
+        <a href="#"><ion-icon class="icon" name="home"></ion-icon></a>
+        <a href="#"><ion-icon class="icon" name="search-outline"></ion-icon></a>
+        <a href="#"><ion-icon class="icon" name="add-circle-outline"></ion-icon></a>
+        <a href="#"><ion-icon class="icon" name="heart-outline"></ion-icon></a>
+        <a href="#"><ion-icon class="icon" name="person-outline"></ion-icon></a>
     </nav>
 </body>
 </html>
